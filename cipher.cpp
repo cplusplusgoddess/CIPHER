@@ -40,6 +40,7 @@ int getDiff( char c1, char c2 )
   //make them lower case
   int char_num1 = tolower(c1);
   int char_num2 = tolower(c2);
+  // the trick here is to handle the wrap around  e.g. x y z -> a b c
   return ((26 - (char_num1-char_num2))%26 );
 
 }
